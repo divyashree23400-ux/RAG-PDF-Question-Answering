@@ -1,0 +1,25 @@
+
+RAG ASSIGNMENT – EXPERIMENT NOTES
+
+1. Five Questions:
+- How many credits is the DevOps Automation course?
+- Why does local inference fail on student laptops?
+- Which embedding model is used in this RAG project?
+- Which vector database is used to store embeddings?
+- What are the main steps involved in the RAG pipeline?
+
+2. Chunk Size Comparison:
+- Chunk size 200 creates more, smaller chunks.
+- Chunk size 1000 creates fewer, larger chunks.
+- Smaller chunks provide more focused information.
+- Larger chunks preserve more context.
+
+3. Correct and Incorrect Answers:
+- The RAG system correctly answered that DevOps Automation carries 4 credits.
+- Answers may be incorrect when relevant information is missing or retrieval selects unrelated chunks.
+
+4. Explanation of an Incorrect Answer:
+An incorrect answer can occur when the system retrieves irrelevant or incomplete information from the PDF. The language model may misunderstand the retrieved context or generate an answer that is not fully supported by it. This is called hallucination. Better chunking and retrieval can help reduce this problem.
+
+5. Conclusion:
+This experiment helped me understand how PDF loading, text chunking, embeddings, vector databases, retrieval and LLMs work together to build a RAG application.
